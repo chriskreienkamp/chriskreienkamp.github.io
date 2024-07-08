@@ -1,6 +1,3 @@
 title: Chris Kreienkamp
 logo: /assets/headshot_circle.png
-author:
-  github_username: cjkreienkamp
-  email: cjkreienkamp@gmail.com
-theme: minima
+theme: jekyll-theme-minimal
