@@ -3,4 +3,4 @@ logo: /assets/headshot_circle.png
 author:
   github_username: cjkreienkamp
   email: cjkreienkamp@gmail.com
-theme: jekyll-theme-minimal
+theme: minima
