@@ -1,5 +1,5 @@
-# Hello!
-I am an engineer from the United States, and I currently live in Rome, Italy where I play water polo and study artificial intelligence at Sapienza University of Rome. I use this site to showcase some personal projects that I have been working on. Feel free to reach out!
+# Self-Driving Car Engineer
+Hello! I am an engineer from the United States, and I currently live in Rome, Italy where I play water polo and study artificial intelligence at Sapienza University of Rome. I use this site to showcase some personal projects that I have been working on. Feel free to reach out!
 
 ## Projects
 ### Project 1
