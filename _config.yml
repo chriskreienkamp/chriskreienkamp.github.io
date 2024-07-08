@@ -1,3 +1,8 @@
 title: Chris Kreienkamp
 theme: jekyll-theme-minimal
-logo: /assets/headshot_circle.png
+
+author:
+  avatar           : /assets/headshot_circle.png
+  bio              : "Self-Driving Car Engineer"
+  email            : "cjkreienkamp@gmail.com"
+  github           : "cjkreienkamp"
