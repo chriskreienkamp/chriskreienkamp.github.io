@@ -1,3 +1,5 @@
+# Self-Driving Car Engineer
+
 ## Education
 - B.S., Mechanical Engineering | University of Notre Dame (2020)
 
