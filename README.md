@@ -8,3 +8,5 @@ Web application card game hosted on GitHub. My friend created the game and wante
 
 #### [Water Polo Covid-19 Analysis](https://cjkreienkamp.github.io/water-polo-covid-19-analysis)
 A study using computer vision to track the proximity of water polo players during a game. This study was then used to predict the potential spread of Covid-19 among athletes.
+
+#### [Archived Projects](https://cjkreienkamp.github.io/archived-projects)
