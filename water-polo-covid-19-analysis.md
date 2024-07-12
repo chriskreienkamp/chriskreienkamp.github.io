@@ -1,7 +1,6 @@
----
-layout: post
-title:  "Welcome to Jekyll!"
----
+layout: page
+title: "PAGE-TITLE"
+permalink: /water-polo-covid-19-analysis
 
 # Welcome
 
