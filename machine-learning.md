@@ -1,16 +1,20 @@
 # Machine Learning Steps
 
 ## 1. Collect data
+* pull from an online repository
+* reorganize into x_train, x_val, y_train, y_val
 * report how big the training/test sets are
 * visualize data so you know what we are dealing with
-* reorganize into x_train, x_val, y_train, y_val
 
 ## 2. Prepare data
+* convert to tensors
 * resize data
 * split into train, test, and validation
+* convert to dataloaders
 
 ## 3. Train model
-* create model
+* build the model
+* create train and test loop functions
 * report characteristics of the model
 * train
 
