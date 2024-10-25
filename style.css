@@ -1,9 +1,7 @@
-table,
-td,
-th {
-    text-align: center;
-    border: 0px solid;
-    padding: auto;
+.table-container table,td,th {
+  text-align: center;
+  border: 0px solid;
+  padding: auto;
 }
 
 .image-container {
@@ -27,3 +25,4 @@ th {
   padding: 10px 20px; 
   font-size: 20px; 
   text-align: center;
+}
