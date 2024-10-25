@@ -1,3 +1,11 @@
+table,
+td,
+th {
+    text-align: center;
+    border: 0px solid;
+    padding: auto;
+}
+
 .image-container {
   position: relative;
   display: inline-block;
