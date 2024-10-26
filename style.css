@@ -11,7 +11,7 @@
     <!--background: #fff;-->
 }
 .side-nav {
-    width: 275px;
+    width: 300px;
     height: 100%;
     background: #21b3ed;
     position: fixed;
@@ -27,7 +27,6 @@
     width: 200px;
     border-radius: 50%;
 }
-
 .nav-links {
     list-style: none;
     position: relative;
@@ -70,6 +69,14 @@
 .nav-links li:nth-child(2):hover ~ .active {top: 29%;}
 .nav-links li:nth-child(3):hover ~ .active {top: 55%;}
 .nav-links li:nth-child(4):hover ~ .active {top: 81%;}
+
+
+
+.section {
+  position: absolute; /*can also be fixed*/
+  left: 350px; right:0; top:0; bottom:0;
+  margin: auto;
+}
 
 
 
