@@ -8,12 +8,12 @@
 .header {
     width: 100%;
     height: 100vh;
-    background: #e2e132;
+    background: #ffff;
 }
 .side-nav {
     width: 250px;
     height: 100%
-    background: #0d74f5
+    background: #21b3ed;
     position: fixed;
     top: 0;
     left: 0;
