@@ -76,25 +76,24 @@
 .table-container {
     position: relative;
 }
-
 table,td,th {
   text-align: center;
   border: 0px solid;
   padding: auto;
 }
 
+
+
 .image-container {
   position: relative;
   display: inline-block;
 }
-
 .image-container img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 6px;
 }
-
 .overlay-text {
   position: absolute;
   top: 50%; 
