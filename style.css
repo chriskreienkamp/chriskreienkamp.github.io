@@ -17,6 +17,7 @@ table,td,th {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 1%;
 }
 
 .overlay-text {
