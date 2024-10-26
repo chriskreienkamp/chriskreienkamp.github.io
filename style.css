@@ -8,7 +8,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background: #fff;
+    <!--background: #fff;-->
 }
 .side-nav {
     width: 250px;
