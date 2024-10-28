@@ -25,12 +25,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/60c15a620e.js" crossorigin="anonymous"></script>
+    <!-----FONT----->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Lilita+One&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body><div class="header">
     <div class="sidebar">
       <div class="logo">
         <img src="assets/favicon.png" class="logo-img">
-        <p>Chris Kreienkamp
+        <p style="font-size: 40px;">Chris<br>Kreienkamp</p>
         <p>cjkreienkamp@gmail.com</p>
       </div>
       <ul class="nav-links">
@@ -41,22 +45,55 @@
       </ul>
     </div>
 
+<!---------------------START BODY--------------------->
+
     <div class="body-text">
 
-      <h1 id="welcome" style="margin-top: 100px;">Welcome</h1>
-      <p style="margin: 50px; margin-right: 100px;">Hello! I am a machine learning engineer from the United States, and I currently live in Rome, Italy where I play water polo and study artificial intelligence and robotics at Sapienza University of Rome. I just use this site to showcase some personal projects that I have been working on. If you want to see source code, check out my GitHub. If you want to learn more about my education and experience, check out my LinkedIn. Feel free to reach out!</p>
+      <h1 id="welcome">Welcome</h1>
+      <p style="padding-bottom: 50px;">Hello! I am a machine learning engineer from the United States, and I currently live in Rome, Italy where I play water polo and study artificial intelligence and robotics at Sapienza University of Rome. I just use this site to showcase some personal projects that I have been working on. If you want to learn more about my education and experience, check out my LinkedIn. Feel free to reach out!</p>
 
-      <h1 id="projects">Projects</h2>
-      <div class="project"><a href="https://github.com/cjkreienkamp/wpolo-scoresheet-ocr/blob/main/presentation.pdf"><img src="assets/computer-vision-water-polo-ocr.png"></a></div>
-      <div class="project"><a href="https://github.com/cjkreienkamp/rviz-demo"><img src="assets/robot-slam-path-planning.png"></a></div>
-      <div class="project"><a href="https://github.com/cjkreienkamp/robot-lidar-simulator"><img src="assets/robot-lidar-simulator.png"></a></div>
-      <div class="project"><a href="https://cjkreienkamp.github.io/water-polo-covid-19-analysis"><img src="assets/water-polo-covid-19-analysis.png"></a></div>
-      <div class="project"><a href="https://cjkreienkamp.github.io/archived-projects"><img src="assets/autonomous-warehouse-robot.png"></a></div>
-      <div class="project"><a href="https://cjkreienkamp.github.io/myst-webapp/"><img src="assets/myst-card-game.png"></a></div>
-
+      <div class="project">
+        <a href="https://github.com/cjkreienkamp/wpolo-scoresheet-ocr/blob/main/presentation.pdf">
+          <img src="assets/computer-vision-water-polo-ocr.png">
+          <div class="content">Takes as input a scoresheet from a water polo game and outputs a file that lists the information in a tabular digital format using OpenCV and a trained neural network.</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/cjkreienkamp/rviz-demo">
+          <img src="assets/robot-slam-path-planning.png">
+          <div class="content">Demonstration of simultaneous localization and mapping (SLAM) and path planning for a Robot Operating Systems (ROS) turtlebot3 robot navigating a 3D Gazebo world with lidar.</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/cjkreienkamp/robot-lidar-simulator">
+          <img src="assets/robot-lidar-simulator.png">
+          <div class="content">Robot with a lidar sensor modeled in C++ using OpenCV. The robot is displayed in a pre-built map that it can sense as it moves throughout the world controlled by arrow keys.</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://cjkreienkamp.github.io/water-polo-covid-19-analysis">
+          <img src="assets/water-polo-covid-19-analysis.png">
+          <div class="content">A study using computer vision to track the proximity of water polo players during a game. This study was then used to predict the potential spread of Covid-19 among athletes.</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://cjkreienkamp.github.io/autonomous-warehouse-robot">
+          <img src="assets/autonomous-warehouse-robot.png">
+          <div class="content">Warehouse machine prototyped with 3 other engineering students to autonomously move a 29 lb payload without wheel skidding. Designed, machined, and tested.</div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://cjkreienkamp.github.io/myst-webapp/">
+          <img src="assets/myst-card-game.png">
+          <div class="content">Web application card game hosted on GitHub. My friend created the game and wanted to play it against a computer, so I built it using Qt.</div>
+        </a>
+      </div>
     </div>
-    <div class="footer">
+
+<!---------------------END BODY--------------------->
+
+    <div class="footer" style="margin-top: 50px;">
       <p>Last updated October 2024.</p>
     </div>
-  </body>
+  </div></body>
 </html>
