@@ -5,6 +5,10 @@
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
     box-sizing: border-box;
     background: transparent;
     /*
@@ -102,11 +106,13 @@ h2 {
 
 /*------------------------------SIDEBAR------------------------------*/
 
+
 .sidebar {
     width: 15%;
     min-width: 75px;
     max-width: 215px;
     height: 100%;
+    background: #003664;
     background: #003664;
     position: fixed;
     top: 0;
@@ -158,6 +164,7 @@ h2 {
 }
 .nav-links li a {
     color: #dae0e4;
+    color: #dae0e4;
     text-decoration: none;
     padding: 10px 14px;
     display: flex;
@@ -190,6 +197,7 @@ h2 {
 }
 .active {
     background: #dae0e4;
+    background: #dae0e4;
     width: 100%;
     height: 47px;
     position: absolute;
@@ -202,6 +210,7 @@ h2 {
     transition: top 0.5s;
 }
 .nav-links li:hover a {
+    color: #003664;
     color: #003664;
     transition: 0.3s;
 }
@@ -219,8 +228,19 @@ h2 {
 .project {
     position: relative;
     overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .project img {
+    width: 90%;
+    max-width: 1000px;
+    filter: drop-shadow(0 0 0.75rem #ccc1b8);
+    object-fit: cover;
+    object-position: center;
+}
+.project:hover img {
+    filter: blur(2px);
+    transform: scale(1.1);
     width: 90%;
     max-width: 1000px;
     filter: drop-shadow(0 0 0.75rem #ccc1b8);
