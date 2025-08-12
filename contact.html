@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<style>
+
+  /* Classic Mac window frame */
+  .mac-window {
+    width: 400px;
+    border: 3px solid black;
+    background: #e0e0e0;
+    box-shadow:
+      inset 3px 3px 0 #ffffff,
+      inset -3px -3px 0 #808080;
+    font-size: 16px;
+  }
+
+  /* Title bar */
+  .title-bar {
+    background: linear-gradient(to bottom, #c0c0c0, #808080);
+    border-bottom: 2px solid black;
+    padding: 6px 10px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+  /* Form container */
+  form {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    border: 2px solid black;
+    background-color: #f0f0f0;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 6px;
+    box-shadow:
+      inset 2px 2px 0 white,
+      inset -2px -2px 0 #a0a0a0;
+    resize: vertical;
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+
+  /* Classic Mac style button */
+  button {
+    margin-top: 10px;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
+    box-shadow:
+      inset 2px 2px 0 white,
+      inset -2px -2px 0 #404040;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px;
+    user-select: none;
+  }
+
+  button:hover {
+    background: linear-gradient(to bottom, #a0a0a0, #e0e0e0);
+  }
+
+  /* Remove focus outlines but keep accessibility */
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline: 2px solid black;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://cjkreienkamp.github.io/index.html">Home</a>
+  <a href="https://cjkreienkamp.github.io/projects.html">Projects</a>
+  <a href="https://cjkreienkamp.github.io/about.html">About</a>
+  <!-- <a href="file:///home/chris/code/cjkreienkamp.github.io/contact.html">Contact</a> -->
+</nav>
+
+<div class="mac-window" role="main" aria-label="Contact form">
+  <div class="title-bar">Contact Me</div>
+  <form id="contactForm" action="mailto:cjkreienkamp@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+    <label for="email">Email address:</label>
+    <input type="email" id="email" name="Email" required placeholder="you@example.com" />
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="Subject" required placeholder="Subject" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="Message" required placeholder="Write your message here..."></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+<!-- <script> -->
+<!--   // Basic validation (optional) -->
+<!--   function validateForm() { -->
+<!--     const email = document.getElementById('email').value.trim(); -->
+<!--     if (!email.includes('@')) { -->
+<!--       alert('Please enter a valid email address.'); -->
+<!--       return false; -->
+<!--     } -->
+<!--     return true; -->
+<!--   } -->
+<!-- </script> -->
+
+</body>
+</html>
