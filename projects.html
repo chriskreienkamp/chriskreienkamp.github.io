@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
 
-<style>
+  <style>
+    ul.project-list {
+      list-style: none;
+      padding-left: 0;
+    }
 
-  ul.project-list {
-    list-style: none;
-    padding-left: 0;
-  }
+    ul.project-list li {
+      margin-bottom: 16px;
+    }
 
-  ul.project-list li {
-    margin-bottom: 16px;
-  }
+    ul.project-list li a {
+      color: black;
+      text-decoration: none;
+      border: 2px solid black;
+      padding: 10px 14px;
+      display: block;
+      box-shadow:
+        inset 2px 2px 0 white,
+        inset -2px -2px 0 #808080;
+      user-select: none;
+    }
 
-  ul.project-list li a {
-    color: black;
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 10px 14px;
-    display: block;
-    box-shadow:
-      inset 2px 2px 0 white,
-      inset -2px -2px 0 #808080;
-    user-select: none;
-  }
-
-  ul.project-list li a:hover {
-    background-color: black;
-    color: white;
-  }
-</style>
+    ul.project-list li a:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
-
-<nav>
-  <a href="https://cjkreienkamp.github.io/">Home</a>
-  <a href="https://cjkreienkamp.github.io/projects.html">Projects</a>
-  <a href="https://cjkreienkamp.github.io/about.html">About</a>
-  <!-- <a href="file:///home/chris/code/cjkreienkamp.github.io/contact.html">Contact</a> -->
-</nav>
-
+<div id="nav-placeholder"></div>
 
 <main>
   <h1>Projects</h1>
@@ -50,12 +43,15 @@
     <li><a href="https://github.com/cjkreienkamp/rviz-demo">ROS1 SLAM + Path Planning</a></li>
     <li><a href="https://github.com/cjkreienkamp/robot-lidar-simulator">C++ Lidar Simulator</a></li>
     <li><a href="https://cjkreienkamp.github.io/projects/water-polo-covid-19-analysis.html">Water Polo Covid-19 Analysis</a></li>
-    <li><a href="https://cjkreienkamp.github.io/projects/autonomous-warehouse-robot.html">Design of an Autonomous Warehouse Robot</a></li>
+    <li><a href="https://cjkreienkamp.github.io/projects/autonomous-payload-pushing-robot.html">Design of an Autonomous Payload-Pushing Robot</a></li>
     <li><a href="https://cjkreienkamp.github.io/myst-webapp/">Qt Myst Card Game</a></li>
+    <!-- <li><a href="projects/loft-bed.html">CAD: Caffe di Cri</a></li> -->
+    <!-- <li><a href="projects/loft-bed.html">CAD: Loft Bed</a></li> -->
+    <!-- <li><a href="projects/fidget-spinner.html">CAD: Water Sample Retrieval Quadcopter</a></li> -->
     <!-- Add more projects below -->
   </ul>
 </main>
 
-
+<script src="../js/navbar.js"></script>
 </body>
 </html>
