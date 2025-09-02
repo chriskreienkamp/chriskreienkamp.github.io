@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <title>Myst</title>
+
+    <style>
+      html, body { padding: 0; margin: 0; overflow: hidden; height: 100% }
+      #screen { width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body onload="init()">
+    <div id="nav-placeholder"></div>
+    <figure style="overflow:visible;" id="qtspinner">
+      <center style="margin-top:1.5em; line-height:150%">
+        <img src="../assets/myst-loader.png" style="display:block; width:75vw;"></img>
+        <strong>Myst</strong>
+        <div id="qtstatus"></div>
+        <noscript>JavaScript is disabled. Please enable JavaScript to use this application.</noscript>
+      </center>
+    </figure>
+    <div id="screen"></div>
+
+    <script type="text/javascript">
+      async function init()
+      {
+        const spinner = document.querySelector('#qtspinner');
+        const screen = document.querySelector('#screen');
+        const status = document.querySelector('#qtstatus');
+
+        const showUi = (ui) => {
+          [spinner, screen].forEach(element => element.style.display = 'none');
+          if (screen === ui)
+            screen.style.position = 'default';
+          ui.style.display = 'block';
+        }
+
+        try {
+          showUi(spinner);
+          status.innerHTML = 'Loading...';
+
+          const instance = await qtLoad({
+            qt: {
+              onLoaded: () => showUi(screen),
+              onExit: exitData =>
+              {
+                status.innerHTML = 'Application exit';
+                status.innerHTML +=
+                  exitData.code !== undefined ? ` with code ${exitData.code}` : '';
+                status.innerHTML +=
+                  exitData.text !== undefined ? ` (${exitData.text})` : '';
+                showUi(spinner);
+              },
+              entryFunction: window.MystApp_entry,
+              containerElements: [screen],
+              
+            }
+          });
+        } catch (e) {
+          console.error(e);
+          console.error(e.stack);
+        }
+      }
+    </script>
+    <script src="MystApp.js"></script>
+    <script type="text/javascript" src="qtloader.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>
