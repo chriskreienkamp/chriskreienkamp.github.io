@@ -1,9 +1,9 @@
 // navbar.js
 const navbarHTML = `
 <nav id="mainNav">
-  <a href="https://cjkreienkamp.github.io/">Home</a>
-  <a href="https://cjkreienkamp.github.io/projects.html">Projects</a>
-  <a href="https://cjkreienkamp.github.io/about.html">About</a>
+  <a href="https://chriskreienkamp.github.io/">Home</a>
+  <a href="https://chriskreienkamp.github.io/projects.html">Projects</a>
+  <a href="https://chriskreienkamp.github.io/about.html">About</a>
 </nav>
 `;
 
